@@ -86,17 +86,19 @@ links = [
 # example, a Link's number of votes can be accessed by link.votes if "link" is a
 # Link.
 
-# make the function query() return the number of votes for the link whose ID is
-# 15
+# make the function query() return a list of Links submitted by user 62443, by
+# submission time ascending
 
 def query():
-    for link in links:
-        #if 15==link[0]:
-        if 15==link.id:
-            return link.votes
-            #return link[3]
+    query_unsort = lambda links:[l for l in links if 62443==l.submitter_id]
+    l=query_unsort(links)
+    l.sort(key=lambda link:link.submitted_time)
+    return l
 
-print query()
     
-
+query_unsort = lambda links:[l for l in links if 62443==l.submitter_id]
+l=query_unsort(links)
+l.sort(key=lambda link:link.submitted_time)
+print l
+print query()
 
