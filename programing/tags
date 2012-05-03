@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+a	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+allmax	.\U1_24.py	/^def allmax(iterable, key=None):$/;"	f
+be	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+best_hand	.\U1_H1.py	/^def best_hand(hands):$/;"	f
+card_ranks	.\U1_18.py	/^def card_ranks(hand):$/;"	f
+card_ranks	.\U1_19.py	/^def card_ranks(hand):$/;"	f
+card_ranks	.\U1_24.py	/^def card_ranks(hand):$/;"	f
+card_ranks	.\U1_H1.py	/^def card_ranks(hand):$/;"	f
+deal	.\U1_25.py	/^def deal(numhands, n=5, deck=mydeck):$/;"	f
+flush	.\U1_24.py	/^def flush(hand):$/;"	f
+flush	.\U1_H1.py	/^def flush(hand):$/;"	f
+for	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+hand_rank	.\U1_24.py	/^def hand_rank(hand):$/;"	f
+hand_rank	.\U1_H1.py	/^def hand_rank(hand):$/;"	f
+itertools	.\U1_H1.py	/^import itertools$/;"	i
+kind	.\U1_18.py	/^def kind(n, ranks):$/;"	f
+kind	.\U1_19.py	/^def kind(n, ranks):$/;"	f
+kind	.\U1_24.py	/^def kind(n, ranks):$/;"	f
+kind	.\U1_H1.py	/^def kind(n, ranks):$/;"	f
+library	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+mydeck	.\U1_25.py	/^mydeck = [r+s for r in '23456789TJQKA' for s in 'SHDC'] $/;"	v
+poker	.\U1_24.py	/^def poker(hands):$/;"	f
+random	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+shuffling	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+straight	.\U1_24.py	/^def straight(ranks):$/;"	f
+straight	.\U1_H1.py	/^def straight(ranks):$/;"	f
+ta_300	.\AD1_2.py	/^ta_300 = [ name + ' is the TA for ' + course for name,contry,course in ta_data if course.find('CS3')!=-1]$/;"	v
+ta_data	.\AD1_2.py	/^ta_data = [['Peter', 'USA', 'CS262'],$/;"	v
+test	.\U1_18.py	/^def test():$/;"	f
+test	.\U1_19.py	/^def test():$/;"	f
+test	.\U1_24.py	/^def test():$/;"	f
+test_best_hand	.\U1_H1.py	/^def test_best_hand():$/;"	f
+this	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+two_pair	.\U1_19.py	/^def two_pair(ranks):$/;"	f
+two_pair	.\U1_24.py	/^def two_pair(ranks):$/;"	f
+two_pair	.\U1_H1.py	/^def two_pair(ranks):$/;"	f
+useful	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+will	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
