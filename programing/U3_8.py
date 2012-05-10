@@ -71,8 +71,8 @@ def test():
     assert match(('alt', ('lit', 'b'), ('lit', 'c')), 'ab') == None
     assert match(('alt', ('lit', 'b'), ('lit', 'a')), 'ab') == 'a'
     print match(('lit', 'a'), 'a')
-    print search(('alt', ('lit', 'b'), ('lit', 'c')), 'ab')# == 'b'
-    #assert search(('alt', ('lit', 'b'), ('lit', 'c')), 'ab') == 'b'
+    print search(('alt', ('lit', 'b'), ('lit', 'c')), 'ab') == 'b'
+    assert search(('alt', ('lit', 'b'), ('lit', 'c')), 'ab') == 'b'
     return 'tests pass'
 
 test()

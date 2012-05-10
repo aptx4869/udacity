@@ -1,3 +1,4 @@
+#-*-encoding:utf-8-*-
 #!/usr/bin/env python
 #
 # Copyright 2007 Google Inc.
@@ -14,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import webapp2,string,cgi,re
+
 form="""
 <form method="post">
     What is your birthday?
@@ -142,6 +143,20 @@ html_wellcom="""
 </html>
 """
 
+import string,cgi,re
+
+import os
+
+import webapp2
+
+import jinja2
+
+from google.appengine.ext import db
+
+template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+
+jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape=True)
+
 USER_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
 PASS_RE = re.compile(r"^.{3,20}$")
 MAIL_RE = re.compile(r"^[\S]+@[\S]+\.[\S]+$")
@@ -171,7 +186,7 @@ class Rot13Handler(webapp2.RequestHandler):
         value=self.rot13(text)
         self.response.out.write(html_rot13 % {"data":value})
 
-class MainHandler(webapp2.RequestHandler):
+class FormTestHandler(webapp2.RequestHandler):
     def get(self):
         #self.response.headers['Content-Type'] = 'text/plain'
         self.response.out.write(form)
@@ -226,7 +241,75 @@ class WellcomHandler(webapp2.RequestHandler):
         name = self.request.get("name")
         self.response.out.write(html_wellcom % {'username':name})
 
-app = webapp2.WSGIApplication([('/', MainHandler),
+
+
+class Handler(webapp2.RequestHandler):
+
+    def write(self, *a, **kw):
+        self.response.out.write(*a, **kw) 
+    def render_str(self, template, **params):
+        t = jinja_env.get_template(template)
+        return t.render(params) 
+
+    def render(self, template, **kw):
+        self.write(self.render_str(template, **kw)) 
+
+class BlogPage(Handler):
+
+    def get(self):
+        articals=db.GqlQuery("SELECT * FROM Artical ORDER BY created DESC LIMIT 11")
+        articals=enumerate(articals)
+        self.render("blog.html",enumerate_articals=articals) 
+
+class ArtHandler(Handler):
+    def get(self):
+        path=self.request.path
+        art_id=int(path[path.rfind('/')+1:])
+        articals=db.GqlQuery("SELECT * FROM Artical WHERE art_id=%d" % art_id)
+        articals=enumerate(articals)
+        self.render("blog.html",enumerate_articals=articals) 
+        #self.write(path)
+
+class Artical(db.Model):
+    art_id=db.IntegerProperty()
+    subject=db.StringProperty(required=True)
+    content=db.TextProperty(required=True)
+    created=db.DateTimeProperty(auto_now_add=True)
+    #url=db.LinkProperty(
+
+class NewPost(Handler):
+
+    def get(self):
+        self.render("newpost.html")
+
+    def post(self):
+        try:
+            artical=db.GqlQuery("SELECT * FROM Artical ORDER BY art_id DESC LIMIT 1")
+            art_id=artical[0].art_id + 1
+        except:
+            art_id=1
+
+        subject=self.request.get("subject")
+        content=self.request.get("content")
+        if subject and content:
+            artical=Artical(art_id=art_id,subject=subject,content=content)
+            artical.put()
+            self.redirect('/blog/%d' % art_id)
+        else:
+            #error="标题、内容不能为空"
+            error='must be subject and content'
+            self.render("newpost.html",subject=subject,content=content,error=error)
+
+#XXX The form input boxes must have the names 'subject' 
+#and 'content' in order for the grading script to correctly
+#post to them.
+#Don't forget to escape your output! 
+        
+
+app = webapp2.WSGIApplication([('/blog', BlogPage),
+                                ('/blog/newpost', NewPost),
+                                ('/blog/\d+', ArtHandler),
+                                ('/formtest', FormTestHandler),
                                 ('/testform', TestHandler),
                                 ('/rot13',Rot13Handler),
                                 ('/sign_up',SignUpHandler),

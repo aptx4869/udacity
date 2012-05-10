@@ -16,20 +16,8 @@
 #
 import webapp2
 form="""
-<form method="post">
-    What is your birthday?
-    <br>
-    <lable> month
-    <input type="text" name="month">
-    </lable>
-    <lable> day
-    <input type="text" name="day">
-    </lable>
-    <lable> year
-    <input type="text" name="year">
-    </lable>
-    <br>
-    <br>
+<form method="post" action="/testform">
+    <input name="q">
     <input type="submit">
 </form>
 """

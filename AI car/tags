@@ -22,14 +22,20 @@ EchoFuncP	.\echofunc.vim	/^function! EchoFuncP()$/;"	f
 EchoFuncPathMapping	.\echofunc.vim	/^func! s:EchoFuncPathMapping(path)$/;"	f
 EchoFuncStart	.\echofunc.vim	/^function! EchoFuncStart()$/;"	f
 EchoFuncStop	.\echofunc.vim	/^function! EchoFuncStop()$/;"	f
+Gaussian	.\U3_14.py	/^    def Gaussian(self, mu, sigma, x):$/;"	m	class:robot
 Gaussian	.\U3_9.py	/^    def Gaussian(self, mu, sigma, x):$/;"	m	class:robot
 GetFuncName	.\echofunc.vim	/^function! s:GetFuncName(text)$/;"	f
 GetFunctions	.\echofunc.vim	/^function! s:GetFunctions(fun, fn_only)$/;"	f
+N	.\U3_14.py	/^N = 1000$/;"	v
 RestoreSettings	.\echofunc.vim	/^function! s:RestoreSettings()$/;"	f
+Z	.\U3_14.py	/^Z = myrobot.sense()$/;"	v
+__init__	.\U3_14.py	/^    def __init__(self):$/;"	m	class:robot
 __init__	.\U3_9.py	/^    def __init__(self):$/;"	m	class:robot
+__repr__	.\U3_14.py	/^    def __repr__(self):$/;"	m	class:robot	file:
 __repr__	.\U3_9.py	/^    def __repr__(self):$/;"	m	class:robot	file:
 colors	.\U1_H4.py	/^colors = [['red', 'green', 'green', 'red' , 'red'],$/;"	v
 division	.\U2_2.py	/^from __future__ import division$/;"	i
+eval	.\U3_14.py	/^def eval(r, p):$/;"	f
 eval	.\U3_9.py	/^def eval(r, p):$/;"	f
 flag	.\U2_2.py	/^            flag = False$/;"	v
 flag	.\U2_2.py	/^    flag=True$/;"	v
@@ -44,7 +50,9 @@ g:EchoFuncMaxBalloonDeclarations	.\echofunc.vim	/^    let g:EchoFuncMaxBalloonDe
 g:EchoFuncPathMapping	.\echofunc.vim	/^	let g:EchoFuncPathMapping = [$/;"	v
 g:EchoFuncPathMappingEnabled	.\echofunc.vim	/^	let g:EchoFuncPathMappingEnabled = 1$/;"	v
 g:EchoFuncShowOnStatus	.\echofunc.vim	/^    let g:EchoFuncShowOnStatus = 0$/;"	v
+landmarks	.\U3_14.py	/^landmarks  = [[20.0, 20.0], [80.0, 80.0], [20.0, 80.0], [80.0, 20.0]]$/;"	v
 landmarks	.\U3_9.py	/^landmarks  = [[20.0, 20.0], [80.0, 80.0], [20.0, 80.0], [80.0, 20.0]]$/;"	v
+measurement_prob	.\U3_14.py	/^    def measurement_prob(self, measurement):$/;"	m	class:robot
 measurement_prob	.\U3_9.py	/^    def measurement_prob(self, measurement):$/;"	m	class:robot
 measurements	.\U1_15.py	/^measurements = ['red', 'green']$/;"	v
 measurements	.\U1_17.py	/^measurements = ['red', 'green']$/;"	v
@@ -55,8 +63,13 @@ motions	.\U1_H4.py	/^motions = [[0,0],[0,1],[1,0],[1,0],[0,1]]$/;"	v
 move	.\U1_17.py	/^def move(p, U):$/;"	f
 move	.\U1_24.py	/^def move(p, U):$/;"	f
 move	.\U1_H4.py	/^def move(p, U):$/;"	f
+move	.\U3_14.py	/^    def move(self, turn, forward):$/;"	m	class:robot
 move	.\U3_9.py	/^    def move(self, turn, forward):$/;"	m	class:robot
+myrobot	.\U3_14.py	/^myrobot = myrobot.move(0.1, 5.0)$/;"	v
+myrobot	.\U3_14.py	/^myrobot = robot()$/;"	v
 myrobot	.\U3_9.py	/^myrobot = robot()$/;"	v
+myrobot	.\U3_9.py	/^myrobot=myrobot.move(-pi\/2,10)$/;"	v
+myrobot	.\U3_9.py	/^myrobot=myrobot.move(-pi\/2,15)$/;"	v
 p	.\U1_15.py	/^    p = sense(p, Z)$/;"	v
 p	.\U1_15.py	/^p=[0.2, 0.2, 0.2, 0.2, 0.2]$/;"	v
 p	.\U1_17.py	/^p=[0, 1, 0, 0, 0]$/;"	v
@@ -66,6 +79,9 @@ p	.\U1_24.py	/^p=[0.2, 0.2, 0.2, 0.2, 0.2]$/;"	v
 p	.\U1_H4.py	/^    p=move(p,motions[i])$/;"	v
 p	.\U1_H4.py	/^    p=sense(p,measurements[i])$/;"	v
 p	.\U1_H4.py	/^p=[]$/;"	v
+p	.\U3_14.py	/^p = []$/;"	v
+p	.\U3_14.py	/^p = p2$/;"	v
+p2	.\U3_14.py	/^p2 = []$/;"	v
 pExact	.\U1_24.py	/^pExact = 0.8$/;"	v
 pHit	.\U1_15.py	/^pHit = 0.6$/;"	v
 pHit	.\U1_17.py	/^pHit = 0.6$/;"	v
@@ -78,9 +94,11 @@ pOvershoot	.\U1_H4.py	/^pOvershoot=(1.0-p_move)\/2$/;"	v
 pUndershoot	.\U1_24.py	/^pUndershoot = 0.1$/;"	v
 pUndershoot	.\U1_H4.py	/^pUndershoot=pOvershoot$/;"	v
 p_move	.\U1_H4.py	/^p_move = 0.8$/;"	v
+random	.\U3_14.py	/^import random$/;"	i
 random	.\U3_9.py	/^import random$/;"	i
 remaind	.\U2_2.py	/^            remaind=(remaind-1)\/5*4$/;"	v
 remaind	.\U2_2.py	/^    remaind=i$/;"	v
+robot	.\U3_14.py	/^class robot:$/;"	c
 robot	.\U3_9.py	/^class robot:$/;"	c
 s:count	.\echofunc.vim	/^let s:count=1$/;"	v
 s:cpo_save	.\echofunc.vim	/^let s:cpo_save=&cpo$/;"	v
@@ -89,12 +107,18 @@ sense	.\U1_15.py	/^def sense(p, Z):$/;"	f
 sense	.\U1_17.py	/^def sense(p, Z):$/;"	f
 sense	.\U1_24.py	/^def sense(p, Z):$/;"	f
 sense	.\U1_H4.py	/^def sense(p, Z):$/;"	f
+sense	.\U3_14.py	/^    def sense(self):$/;"	m	class:robot
 sense	.\U3_9.py	/^    def sense(self):$/;"	m	class:robot
 sensor_right	.\U1_H4.py	/^sensor_right = 0.7$/;"	v
+set	.\U3_14.py	/^    def set(self, new_x, new_y, new_orientation):$/;"	m	class:robot
 set	.\U3_9.py	/^    def set(self, new_x, new_y, new_orientation):$/;"	m	class:robot
+set_noise	.\U3_14.py	/^    def set_noise(self, new_f_noise, new_t_noise, new_s_noise):$/;"	m	class:robot
 set_noise	.\U3_9.py	/^    def set_noise(self, new_f_noise, new_t_noise, new_s_noise):$/;"	m	class:robot
 show	.\U1_H4.py	/^def show(p):$/;"	f
+w	.\U3_14.py	/^w = [p.measurement_prob(]$/;"	v
 world	.\U1_15.py	/^world=['green', 'red', 'red', 'green', 'green']$/;"	v
 world	.\U1_17.py	/^world=['green', 'red', 'red', 'green', 'green']$/;"	v
 world	.\U1_24.py	/^world=['green', 'red', 'red', 'green', 'green']$/;"	v
+world_size	.\U3_14.py	/^world_size = 100.0$/;"	v
 world_size	.\U3_9.py	/^world_size = 100.0$/;"	v
+x	.\U3_14.py	/^    x = robot()$/;"	v
