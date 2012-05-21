@@ -4,41 +4,417 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+EU	.\U5_19.py	/^    def EU(action): return Q(state, action, U)$/;"	f	function:best_action
+EU	.\U5_21.py	/^    def EU(action): return Q(state, action, U)$/;"	f	function:best_action
+EU	.\U5_H2.py	/^        def EU(action): return Q(state, action, U)$/;"	f	function:strategy_d.best_action
+Fail	.\U3_H1.py	/^Fail = (None, None)$/;"	v
+Fail	.\U4_25.py	/^Fail = []$/;"	v
+Fail	.\U4_26.py	/^Fail = []$/;"	v
+Fail	.\U4_H1.py	/^Fail = []$/;"	v
+Fail	.\U4_H2.py	/^Fail = []$/;"	v
+Fraction	.\U5_28.py	/^from fractions import Fraction$/;"	i
+P_H20	.\U5_H2.py	/^    def P_H20(state):$/;"	f	function:strategy_d
+Pwin	.\U5_19.py	/^def Pwin(state):$/;"	f
+Pwin	.\U5_21.py	/^def Pwin(state):$/;"	f
+Pwin	.\U5_H2.py	/^    def Pwin(state):$/;"	f	function:strategy_d
+Pwin2	.\U5_H1.py	/^def Pwin2(state):$/;"	f
+Pwin3	.\U5_H1.py	/^def Pwin3(me, you, pending):$/;"	f
+Pwin3	.\U5_H2.py	/^    def Pwin3(me, you, pending,double):$/;"	f	function:strategy_d
+Q_pig	.\U5_19.py	/^def Q_pig(state, action, Pwin):  $/;"	f
+Q_pig	.\U5_21.py	/^def Q_pig(state, action, Pwin):  $/;"	f
+Q_pig	.\U5_H1.py	/^def Q_pig(state, action, Pwin):  $/;"	f
+Q_pig	.\U5_H2.py	/^    def Q_pig(state, action, Pwin):  $/;"	f	function:strategy_d
+Tboy	.\U5_28.py	/^Tboy = [s for s in kids if 'BT' in s]$/;"	v
+__s	.\U4_H3.py	/^        def __s(state):$/;"	f	function:ride.successors	file:
+_d	.\U3_29.py	/^    def _d(fn):$/;"	f	function:decorator
+_d	.\U3_H1.py	/^    def _d(fn):$/;"	f	function:decorator
+_d	.\U5_19.py	/^    def _d(fn):$/;"	f	function:decorator
+_d	.\U5_21.py	/^    def _d(fn):$/;"	f	function:decorator
+_d	.\U5_H1.py	/^    def _d(fn):$/;"	f	function:decorator
+_d	.\U5_H2.py	/^    def _d(fn):$/;"	f	function:decorator
+_f	.\U3_29.py	/^    def _f(*args):$/;"	f	function:trace
+_f	.\U3_H1.py	/^    def _f(*args):$/;"	f	function:memo
+_f	.\U5_19.py	/^    def _f(*args):$/;"	f	function:memo
+_f	.\U5_21.py	/^    def _f(*args):$/;"	f	function:memo
+_f	.\U5_H1.py	/^    def _f(*args):$/;"	f	function:memo
+_f	.\U5_H2.py	/^    def _f(*args):$/;"	f	function:memo
+_f	.\U5_H2.py	/^    def _f(*args):$/;"	f	function:trace
+_g	.\U4_H2.py	/^        def _g(g):$/;"	f	function:more_pour_problem.is_goal
+_isgoal	.\U4_26.py	/^        def _isgoal(state): return state[:3] == (0, 0, 0)$/;"	f	function:mc_problem2
+_isgoal	.\U4_26.py	/^        def _isgoal(state):$/;"	f	function:mc_problem2
+_isgoal	.\U4_28.py	/^    def _isgoal(state):$/;"	f	function:bridge_problem3
+_ismirro	.\U2_H3.py	/^def _ismirro(text,needle,length):$/;"	f
+_isub	.\U2_H3.py	/^def _isub(text,needle,length):$/;"	f
+_s	.\U4_H2.py	/^        def _s(state):$/;"	f	function:more_pour_problem.successors
+_s	.\test.py	/^    def _s(state):$/;"	f	function:_successors
+_successors	.\test.py	/^def _successors(capacities):$/;"	f
 a	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+a	.\test.py	/^a= _successors((1,2,4,8))$/;"	v
+a	.\test.py	/^a=[1,2,3,4]$/;"	v
+add	.\U4_25.py	/^def add(X, Y):$/;"	f
+add	.\U4_26.py	/^def add(X, Y):$/;"	f
+add_to_frontier	.\U4_27.py	/^def add_to_frontier(frontier, path):$/;"	f
+add_to_frontier	.\U4_28.py	/^def add_to_frontier(frontier, path):$/;"	f
+adjacent	.\U2_H2.py	/^def adjacent(a,b):$/;"	f
+all_ints	.\U2_22.py	/^def all_ints():$/;"	f
 allmax	.\U1_24.py	/^def allmax(iterable, key=None):$/;"	f
+allmax	.\U1_24b.py	/^def allmax(iterable, key=None):$/;"	f
+allmax	.\U1_H1.py	/^def allmax(iterable, key=None):$/;"	f
+alt	.\U3_11.py	/^def alt(x, y): return lambda text:set(x(text)).union(y(text))$/;"	f
+alt	.\U3_12.py	/^def alt(x, y): return lambda t: x(t) | y(t)$/;"	f
+alt	.\U3_14.py	/^def alt(x, y):      return lambda Ns: set([x]) | set([y]) if len(x),len(y) in Ns elif len(x) in Ns null else null# your code here$/;"	f
+alt	.\U3_7.py	/^def alt(x, y):    return ('alt', x, y)# ??$/;"	f
+alt	.\U3_8.py	/^def alt(x, y):    return ('alt', x, y)$/;"	f
+always_hold	.\U5_9.py	/^def always_hold(state):$/;"	f
+always_roll	.\U5_9.py	/^def always_roll(state):$/;"	f
+average	.\U2_19.py	/^def average(numbers):$/;"	f
+average_score	.\U5_H3.py	/^def average_score(strategy, N=1000):$/;"	f
+b	.\test.py	/^b=[6,7,8,9]$/;"	v
+bad_strategy	.\U5_23.py	/^def bad_strategy(state):$/;"	f
+bcost	.\U4_17.py	/^def bcost(action):$/;"	f
+bcost	.\U4_27.py	/^def bcost(action):$/;"	f
+bcost	.\U4_28.py	/^def bcost(action):$/;"	f
 be	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
-best_hand	.\U1_H1.py	/^def best_hand(hands):$/;"	f
+best_action	.\U5_19.py	/^def best_action(state, actions, Q, U):$/;"	f
+best_action	.\U5_21.py	/^def best_action(state, actions, Q, U):$/;"	f
+best_action	.\U5_H2.py	/^    def best_action(state, actions, Q, U):$/;"	f	function:strategy_d
+best_hand	.\U1_H1.py	/^def best_hand(hand,n=7):$/;"	f
+best_wild_hand	.\U1_H2.py	/^def best_wild_hand(hand):$/;"	f
+blue	.\U4_H3.py	/^    blue='bowdoin government state aquarium maverick airport suffolk revere wonderland',$/;"	v
+boston	.\U4_H3.py	/^boston = subway($/;"	v
+bridge_problem	.\U4_14.py	/^def bridge_problem(here):$/;"	f
+bridge_problem	.\U4_15.py	/^def bridge_problem(here):$/;"	f
+bridge_problem2	.\U4_27.py	/^def bridge_problem2(here):$/;"	f
+bridge_problem3	.\U4_28.py	/^def bridge_problem3(here):$/;"	f
+bsuccessors	.\U4_14.py	/^def bsuccessors(state):$/;"	f
+bsuccessors	.\U4_15.py	/^def bsuccessors(state):$/;"	f
+bsuccessors	.\U4_16.py	/^def bsuccessors(state):$/;"	f
+bsuccessors	.\U4_8.py	/^def bsuccessors(state):$/;"	f
+bsuccessors2	.\U4_16.py	/^def bsuccessors2(state):$/;"	f
+bsuccessors2	.\U4_27.py	/^def bsuccessors2(state):$/;"	f
+bsuccessors2	.\U4_28.py	/^def bsuccessors2(state):$/;"	f
+bsuccessors3	.\U4_H1.py	/^def bsuccessors3(state):$/;"	f
+cProfile	.\U2_H3.py	/^import cProfile$/;"	i
+capacities	.\test.py	/^capacities = (1,2,4,8)$/;"	v
 card_ranks	.\U1_18.py	/^def card_ranks(hand):$/;"	f
 card_ranks	.\U1_19.py	/^def card_ranks(hand):$/;"	f
 card_ranks	.\U1_24.py	/^def card_ranks(hand):$/;"	f
+card_ranks	.\U1_24b.py	/^def card_ranks(hand):$/;"	f
 card_ranks	.\U1_H1.py	/^def card_ranks(hand):$/;"	f
+card_ranks	.\U1_H2.py	/^def card_ranks(hand):$/;"	f
+clueless	.\U5_7.py	/^def clueless(state):$/;"	f
+clueless	.\U5_9.py	/^def clueless(state):$/;"	f
+clueless_d	.\U5_H2.py	/^def clueless_d(state):$/;"	f
+compile_formula	.\U2_H1.py	/^def compile_formula(formula, verbose=True):$/;"	f
+compile_word	.\U2_41.py	/^def compile_word(word):$/;"	f
+compile_word	.\U2_H1.py	/^def compile_word(word):$/;"	f
+components	.\U3_6.py	/^def components(pattern):$/;"	f
+components	.\U3_8.py	/^def components(pattern):$/;"	f
+condP	.\U5_28.py	/^def condP(predicate, event):$/;"	f
+csuccessors	.\U4_22.py	/^def csuccessors(state):$/;"	f
+csuccessors	.\U4_25.py	/^def csuccessors(state):$/;"	f
+csuccessors	.\U4_26.py	/^def csuccessors(state):$/;"	f
 deal	.\U1_25.py	/^def deal(numhands, n=5, deck=mydeck):$/;"	f
+decorator	.\U3_29.py	/^def decorator(d):$/;"	f
+decorator	.\U3_H1.py	/^def decorator(d):$/;"	f
+decorator	.\U5_19.py	/^def decorator(d):$/;"	f
+decorator	.\U5_21.py	/^def decorator(d):$/;"	f
+decorator	.\U5_H1.py	/^def decorator(d):$/;"	f
+decorator	.\U5_H2.py	/^def decorator(d):$/;"	f
+deltas	.\U4_25.py	/^deltas = {(2, 0, 1,    -2,  0, -1): 'MM',$/;"	v
+deltas	.\U4_26.py	/^deltas = {(2, 0, 1,    -2,  0, -1): 'MM',$/;"	v
+di	.\U5_H2.py	/^    def di(i):$/;"	f	function:strategy_d
+dierolls	.\U5_23.py	/^def dierolls():$/;"	f
+dierolls	.\U5_H2.py	/^def dierolls():$/;"	f
+dit	.\U4_H1.py	/^dit = bsuccessors3((frozenset([1]), frozenset([]), 0))$/;"	v
+dit	.\U4_H1.py	/^dit = bsuccessors3((frozenset([2, 4]), frozenset([3, 5]), 1))$/;"	v
+do	.\U5_H2.py	/^def do(action, state, dierolls):$/;"	f
+do	.\U5_H3.py	/^def do(action, state):$/;"	f
+doctest	.\U4_15.py	/^import doctest$/;"	i
+doctest	.\U4_H2.py	/^import doctest$/;"	i
+dot	.\U3_12.py	/^dot = lambda t: set([t[1:]]) if t else null$/;"	v
+dot	.\U3_14.py	/^dot = oneof('?')    # You could expand the alphabet to more chars.$/;"	v
+dot	.\U3_7.py	/^dot = ('dot',)$/;"	v
+dot	.\U3_8.py	/^dot = ('dot',)$/;"	v
+double_20_d	.\U5_H2.py	/^def double_20_d(state):$/;"	f
+elapsed_time	.\U4_14.py	/^def elapsed_time(path):$/;"	f
+elapsed_time	.\U4_15.py	/^def elapsed_time(path):$/;"	f
+eol	.\U3_12.py	/^eol = lambda t: set(['']) if t == '' else null$/;"	v
+eol	.\U3_7.py	/^eol = ('eol',)#??$/;"	v
+eol	.\U3_8.py	/^eol = ('eol',)$/;"	v
+epsilon	.\U3_14.py	/^epsilon = lit('')   # The pattern that matches the empty string.$/;"	v
+f	.\U2_41.py	/^f=lambda x,i:x+'*'+str(10**-i)+'+'$/;"	v
+f	.\U3_23.py	/^def f(x,y):return x+y$/;"	f
+f_1	.\U3_H2.py	/^    def f_1(y):$/;"	f	function:inverse
+f_1	.\U3_H2.py	/^    def f_1(y):$/;"	f	function:slow_inverse
+faster_solve	.\U2_H1.py	/^def faster_solve(formula):$/;"	f
+fib	.\U3_29.py	/^def fib(n):$/;"	f
+fill_in	.\U2_32.py	/^def fill_in(formula):$/;"	f
+final_state	.\U4_27.py	/^def final_state(path): return path[-1]$/;"	f
+final_state	.\U4_28.py	/^def final_state(path): return path[-1]$/;"	f
+find_item	.\U1_H2.py	/^def find_item(the_list, item):$/;"	f
+findtags	.\U3_H3.py	/^def findtags(text):$/;"	f
+floor_puzzle	.\U2_H2.py	/^def floor_puzzle():$/;"	f
 flush	.\U1_24.py	/^def flush(hand):$/;"	f
+flush	.\U1_24b.py	/^def flush(hand):$/;"	f
 flush	.\U1_H1.py	/^def flush(hand):$/;"	f
+flush	.\U1_H2.py	/^def flush(hand):$/;"	f
 for	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+foxes_and_hens	.\U5_H3.py	/^def foxes_and_hens(strategy, foxes=7, hens=45):$/;"	f
+g	.\U3_11.py	/^g = alt(lit('a'), lit('b'))$/;"	v
+goal	.\U5_19.py	/^goal = 40$/;"	v
+goal	.\U5_21.py	/^goal = 40$/;"	v
+goal	.\U5_23.py	/^goal  = 40$/;"	v
+goal	.\U5_8.py	/^goal = 50$/;"	v
+goal	.\U5_9.py	/^goal = 50$/;"	v
+goal	.\U5_H1.py	/^goal = 40$/;"	v
+goal	.\U5_H2.py	/^goal = 40$/;"	v
+grammar	.\U3_H1.py	/^def grammar(description, whitespace=r'\\s*'):$/;"	f
+green	.\U4_H3.py	/^    green='lechmere science north haymarket government park copley kenmore newton riverside',$/;"	v
 hand_rank	.\U1_24.py	/^def hand_rank(hand):$/;"	f
+hand_rank	.\U1_24b.py	/^def hand_rank(hand):$/;"	f
 hand_rank	.\U1_H1.py	/^def hand_rank(hand):$/;"	f
+hand_rank	.\U1_H2.py	/^def hand_rank(hand):$/;"	f
+hold	.\U5_19.py	/^def hold(state):$/;"	f
+hold	.\U5_21.py	/^def hold(state):$/;"	f
+hold	.\U5_23.py	/^def hold(state):$/;"	f
+hold	.\U5_5.py	/^def hold(state):$/;"	f
+hold	.\U5_9.py	/^def hold(state):$/;"	f
+hold	.\U5_H1.py	/^def hold(state):$/;"	f
+hold_20_d	.\U5_H2.py	/^def hold_20_d(state):$/;"	f
+hold_at	.\U5_8.py	/^def hold_at(x):$/;"	f
+illegal_strategy	.\U5_23.py	/^def illegal_strategy(state):$/;"	f
+inverse	.\U3_H2.py	/^def inverse(f, delta = 1\/128.):$/;"	f
+is_goal	.\U4_25.py	/^def is_goal(state):$/;"	f
+is_goal	.\U4_H2.py	/^    def is_goal(goal):$/;"	f	function:more_pour_problem
+is_goal	.\U4_H3.py	/^    def is_goal(state):$/;"	f	function:ride
 itertools	.\U1_H1.py	/^import itertools$/;"	i
+itertools	.\U1_H2.py	/^import itertools$/;"	i
+itertools	.\U2_32.py	/^import string, re, itertools$/;"	i
+itertools	.\U2_H1.py	/^import itertools$/;"	i
+itertools	.\U2_H2.py	/^import itertools$/;"	i
+itertools	.\U4_8.py	/^    import itertools $/;"	i
+itertools	.\U4_H1.py	/^    import itertools $/;"	i
+itertools	.\U4_H2.py	/^            import itertools $/;"	i
+itertools	.\U4_H3.py	/^    import itertools$/;"	i
+itertools	.\U5_28.py	/^import itertools$/;"	i
+itertools	.\test.py	/^        import itertools $/;"	i
+itertools	.\test.py	/^import itertools$/;"	i
+json_parse	.\U3_H1.py	/^def json_parse(text):$/;"	f
+k	.\U3_23.py	/^k=n_ary(f)$/;"	v
+kids	.\U5_28.py	/^kids = product(sex,weeks,sex,weeks)$/;"	v
 kind	.\U1_18.py	/^def kind(n, ranks):$/;"	f
 kind	.\U1_19.py	/^def kind(n, ranks):$/;"	f
 kind	.\U1_24.py	/^def kind(n, ranks):$/;"	f
+kind	.\U1_24b.py	/^def kind(n, ranks):$/;"	f
 kind	.\U1_H1.py	/^def kind(n, ranks):$/;"	f
+kind	.\U1_H2.py	/^def kind(n, ranks):$/;"	f
+l	.\U3_11.py	/^l=lit('abc')$/;"	v
 library	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+lis	.\U2_41.py	/^lis=(f(word[i],i) for i in range(0,-len(word),-1))$/;"	v
+lit	.\U3_11.py	/^def lit(s): return lambda text: set([text[len(s):]]) if text.startswith(s) else null$/;"	f
+lit	.\U3_12.py	/^def lit(s): return lambda t: set([t[len(s):]]) if t.startswith(s) else null$/;"	f
+lit	.\U3_14.py	/^def lit(s):         return lambda Ns: set([s]) if len(s) in Ns else null$/;"	f
+lit	.\U3_7.py	/^def lit(string):  return ('lit', string)$/;"	f
+lit	.\U3_8.py	/^def lit(string):  return ('lit', string)$/;"	f
+longest_ride	.\U4_H3.py	/^def longest_ride(system):$/;"	f
+longest_subpalindrome_slice	.\U2_H3.py	/^def longest_subpalindrome_slice(text):$/;"	f
+lorem	.\U2_H3.py	/^def lorem(txt):$/;"	f
+lowest_cost_search	.\U4_27.py	/^def lowest_cost_search(start, successors, is_goal, action_cost):$/;"	f
+lowest_cost_search	.\U4_28.py	/^def lowest_cost_search(start, successors, is_goal, action_cost):$/;"	f
+match	.\U3_12.py	/^def match(pattern, text):$/;"	f
+match	.\U3_8.py	/^def match(pattern, text):$/;"	f
+matchset	.\U3_6.py	/^def matchset(pattern, text):$/;"	f
+matchset	.\U3_8.py	/^def matchset(pattern, text):$/;"	f
+max_diffs	.\U5_21.py	/^def max_diffs(state):$/;"	f
+max_wins	.\U5_19.py	/^def max_wins(state):$/;"	f
+max_wins	.\U5_21.py	/^def max_wins(state):$/;"	f
+mc_problem1	.\U4_25.py	/^def mc_problem1(start=(3, 3, 1, 0, 0, 0), goal=None):$/;"	f
+mc_problem2	.\U4_26.py	/^def mc_problem2(start=(3, 3, 1, 0, 0, 0), goal=None):$/;"	f
+memo	.\U3_H1.py	/^def memo(f):$/;"	f
+memo	.\U5_19.py	/^def memo(f):$/;"	f
+memo	.\U5_21.py	/^def memo(f):$/;"	f
+memo	.\U5_H1.py	/^def memo(f):$/;"	f
+memo	.\U5_H2.py	/^def memo(f):$/;"	f
+more_pour_problem	.\U4_H2.py	/^def more_pour_problem(capacities, goal, start=None):$/;"	f
 mydeck	.\U1_25.py	/^mydeck = [r+s for r in '23456789TJQKA' for s in 'SHDC'] $/;"	v
+n_ary	.\U3_23.py	/^def n_ary(f):$/;"	f
+n_ary_f	.\U3_23.py	/^    def n_ary_f(x, *args):$/;"	f	function:n_ary
+null	.\U3_11.py	/^null = frozenset([])$/;"	v
+null	.\U3_12.py	/^null = frozenset([])$/;"	v
+null	.\U3_14.py	/^null = frozenset([])$/;"	v
+null	.\U3_6.py	/^null = frozenset()$/;"	v
+null	.\U3_8.py	/^null = frozenset()$/;"	v
+one_card_rank	.\U1_H1.py	/^def one_card_rank(card):$/;"	f
+oneof	.\U3_12.py	/^def oneof(chars): return lambda t: set([t[1:]]) if (t and t[0] in chars) else null$/;"	f
+oneof	.\U3_14.py	/^def oneof(chars):   return lambda Ns: set(chars) if 1 in Ns else null# your code here$/;"	f
+oneof	.\U3_7.py	/^def oneof(chars): return ('oneof', tuple(chars))$/;"	f
+oneof	.\U3_8.py	/^def oneof(chars): return ('oneof', tuple(chars))$/;"	f
+opt	.\U3_14.py	/^def opt(x):         return alt(epsilon, x)$/;"	f
+opt	.\U3_7.py	/^def opt(x):       return alt(lit(''), x) #opt(x) means that x is optional$/;"	f
+opt	.\U3_8.py	/^def opt(x):       return alt(lit(''), x)$/;"	f
+orange	.\U4_H3.py	/^    orange='oakgrove sullivan haymarket state downtown chinatown tufts backbay foresthills',$/;"	v
+other	.\U5_19.py	/^other = {1:0, 0:1}$/;"	v
+other	.\U5_21.py	/^other = {1:0, 0:1}$/;"	v
+other	.\U5_23.py	/^other = {1:0, 0:1}$/;"	v
+other	.\U5_9.py	/^other = {1:0, 0:1}$/;"	v
+other	.\U5_H1.py	/^other = {1:0, 0:1}$/;"	v
+other	.\U5_H2.py	/^other = {1:0, 0:1}$/;"	v
+parse	.\U3_H1.py	/^def parse(start_symbol, text, grammar):$/;"	f
+parse_atom	.\U3_H1.py	/^    def parse_atom(atom, text):$/;"	f	function:parse
+parse_sequence	.\U3_H1.py	/^    def parse_sequence(sequence, text):$/;"	f	function:parse
+path_actions	.\U4_15.py	/^def path_actions(path):$/;"	f
+path_actions	.\U4_9.py	/^def path_actions(path):$/;"	f
+path_actions	.\U4_H3.py	/^def path_actions(path):$/;"	f
+path_cost	.\U4_17.py	/^def path_cost(path):$/;"	f
+path_cost	.\U4_27.py	/^def path_cost(path):$/;"	f
+path_cost	.\U4_28.py	/^def path_cost(path):$/;"	f
+path_states	.\U4_15.py	/^def path_states(path):$/;"	f
+path_states	.\U4_9.py	/^def path_states(path):$/;"	f
+path_states	.\U4_H3.py	/^def path_states(path):$/;"	f
+pig_actions	.\U5_19.py	/^def pig_actions(state):$/;"	f
+pig_actions	.\U5_21.py	/^def pig_actions(state):$/;"	f
+pig_actions	.\U5_H1.py	/^def pig_actions(state):$/;"	f
+pig_actions_d	.\U5_H2.py	/^def pig_actions_d(state):$/;"	f
+play_pig	.\U5_23.py	/^def play_pig(A, B, dierolls=dierolls()):$/;"	f
+play_pig	.\U5_9.py	/^def play_pig(A, B):$/;"	f
+play_pig_d	.\U5_H2.py	/^def play_pig_d(A, B, dierolls=dierolls()):$/;"	f
+plus	.\U3_14.py	/^def plus(x):        return lambda Ns: genseq(x, star(x), Ns, startx=1) #Tricky$/;"	f
+plus	.\U3_7.py	/^def plus(x):      return seq(lit(x),star(lit(x)))$/;"	f
+plus	.\U3_8.py	/^def plus(x):      return seq(x, start(x))$/;"	f
 poker	.\U1_24.py	/^def poker(hands):$/;"	f
+poker	.\U1_24b.py	/^def poker(hands):$/;"	f
+posable_card	.\U1_H2.py	/^def posable_card(hand):$/;"	f
+possible_moves	.\U5_7.py	/^possible_moves = ['roll', 'hold']$/;"	v
+possible_moves	.\U5_9.py	/^possible_moves = ['roll', 'hold']$/;"	v
+product	.\U5_28.py	/^def product(*variables):$/;"	f
 random	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+random	.\U5_23.py	/^import random$/;"	i
+random	.\U5_7.py	/^import random$/;"	i
+random	.\U5_9.py	/^import random$/;"	i
+random	.\U5_H2.py	/^import random$/;"	i
+random	.\U5_H3.py	/^import random$/;"	i
+re	.\U2_30.py	/^import string, re $/;"	i
+re	.\U2_32.py	/^import string, re, itertools$/;"	i
+re	.\U2_H1.py	/^import re$/;"	i
+re	.\U3_H1.py	/^import re$/;"	i
+re	.\U3_H3.py	/^import re$/;"	i
+red	.\U4_H3.py	/^    red='alewife davis porter harvard central mit charles park downtown south umass mattapan')$/;"	v
+ride	.\U4_H3.py	/^def ride(here, there, system=boston):$/;"	f
+roll	.\U5_19.py	/^def roll(state, d):$/;"	f
+roll	.\U5_21.py	/^def roll(state, d):$/;"	f
+roll	.\U5_23.py	/^def roll(state, d):$/;"	f
+roll	.\U5_5.py	/^def roll(state, d):$/;"	f
+roll	.\U5_9.py	/^def roll(state, d):$/;"	f
+roll	.\U5_H1.py	/^def roll(state, d):$/;"	f
+search	.\U3_8.py	/^def search(pattern, text):$/;"	f
+seq	.\U3_11.py	/^def seq(x, y): return lambda text: set().union(*map(y, x(text)))$/;"	f
+seq	.\U3_12.py	/^def seq(x, y): return lambda t: set().union(*map(y, x(t)))$/;"	f
+seq	.\U3_14.py	/^def seq(x, y):      return lambda Ns: genseq(x, y, Ns)$/;"	f
+seq	.\U3_7.py	/^def seq(x, y):    return ('seq', x, y)$/;"	f
+seq	.\U3_8.py	/^def seq(x, y):    return ('seq', x, y)$/;"	f
+sex	.\U5_28.py	/^sex = 'BG'$/;"	v
+shortest_path_search	.\U4_25.py	/^def shortest_path_search(start, successors, is_goal):$/;"	f
+shortest_path_search	.\U4_26.py	/^def shortest_path_search(start, successors, is_goal):$/;"	f
+shortest_path_search	.\U4_H1.py	/^def shortest_path_search(start, successors, is_goal):$/;"	f
+shortest_path_search	.\U4_H2.py	/^def shortest_path_search(start, successors, is_goal):$/;"	f
+shortest_path_search	.\U4_H3.py	/^def shortest_path_search(start, successors, is_goal):$/;"	f
 shuffling	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+slow_inverse	.\U3_H2.py	/^def slow_inverse(f, delta=1\/128.):$/;"	f
+solve	.\U2_30.py	/^def solve(formula):$/;"	f
+solve	.\U2_32.py	/^def solve(formula):$/;"	f
+split	.\U3_H1.py	/^from string import split$/;"	i
+split	.\U3_H3.py	/^from string import split$/;"	i
+sqrt	.\U3_H2.py	/^sqrt = slow_inverse(square)$/;"	v
+sqrt2	.\U3_H2.py	/^sqrt2 = inverse(square)$/;"	v
+square	.\U3_H2.py	/^def square(x): return x*x$/;"	f
+star	.\U3_12.py	/^def star(x): return lambda t: (set([t]) | $/;"	f
+star	.\U3_14.py	/^def star(x):        return lambda Ns: opt(plus(x))(Ns)$/;"	f
+star	.\U3_7.py	/^def star(x):      return ('star', x)# ??$/;"	f
+start	.\U3_8.py	/^def start(x):     return ('star', x)$/;"	f
+start	.\test.py	/^start = None$/;"	v
+start	.\test.py	/^start = tuple(0 for _ in range(len(capacities))) if start == None else start$/;"	v
+state	.\U5_7.py	/^state=0$/;"	v
 straight	.\U1_24.py	/^def straight(ranks):$/;"	f
+straight	.\U1_24b.py	/^def straight(ranks):$/;"	f
 straight	.\U1_H1.py	/^def straight(ranks):$/;"	f
+straight	.\U1_H2.py	/^def straight(ranks):$/;"	f
+strategy	.\U5_8.py	/^    def strategy(state):$/;"	f	function:hold_at
+strategy	.\U5_H3.py	/^def strategy(state):$/;"	f
+strategy_compare	.\U5_H2.py	/^def strategy_compare(A, B, N=1000):$/;"	f
+strategy_d	.\U5_H2.py	/^def strategy_d(state):$/;"	f
+string	.\U2_30.py	/^import string, re $/;"	i
+string	.\U2_32.py	/^import string, re, itertools$/;"	i
+string	.\U2_H1.py	/^import string$/;"	i
+sub	.\U4_25.py	/^def sub(X, Y):$/;"	f
+sub	.\U4_26.py	/^def sub(X, Y):$/;"	f
+subway	.\U4_H3.py	/^def subway(**lines):$/;"	f
+successors	.\U4_25.py	/^def successors(state):$/;"	f
+successors	.\U4_H2.py	/^    def successors(capacities):$/;"	f	function:more_pour_problem
+successors	.\U4_H3.py	/^    def successors(system):$/;"	f	function:ride
+superior	.\U5_H3.py	/^def superior(A, B=take5):$/;"	f
+t	.\U2_41.py	/^t=''$/;"	v
+t	.\U2_41.py	/^t=t[:-1]$/;"	v
 ta_300	.\AD1_2.py	/^ta_300 = [ name + ' is the TA for ' + course for name,contry,course in ta_data if course.find('CS3')!=-1]$/;"	v
 ta_data	.\AD1_2.py	/^ta_data = [['Peter', 'USA', 'CS262'],$/;"	v
+take5	.\U5_H3.py	/^def take5(state):$/;"	f
 test	.\U1_18.py	/^def test():$/;"	f
 test	.\U1_19.py	/^def test():$/;"	f
 test	.\U1_24.py	/^def test():$/;"	f
+test	.\U1_24b.py	/^def test():$/;"	f
+test	.\U2_H1.py	/^def test():$/;"	f
+test	.\U2_H3.py	/^def test():$/;"	f
+test	.\U3_12.py	/^def test():$/;"	f
+test	.\U3_14.py	/^def test():$/;"	f
+test	.\U3_6.py	/^def test():$/;"	f
+test	.\U3_7.py	/^def test():$/;"	f
+test	.\U3_8.py	/^def test():$/;"	f
+test	.\U3_H1.py	/^def test():$/;"	f
+test	.\U3_H3.py	/^def test():$/;"	f
+test	.\U4_14.py	/^def test():$/;"	f
+test	.\U4_16.py	/^def test():$/;"	f
+test	.\U4_17.py	/^def test():$/;"	f
+test	.\U4_22.py	/^def test():$/;"	f
+test	.\U4_26.py	/^def test():$/;"	f
+test	.\U4_28.py	/^def test():$/;"	f
+test	.\U4_8.py	/^def test():$/;"	f
+test	.\U4_9.py	/^def test():$/;"	f
+test	.\U4_H1.py	/^def test():$/;"	f
+test	.\U5_19.py	/^def test():$/;"	f
+test	.\U5_21.py	/^def test():$/;"	f
+test	.\U5_23.py	/^def test():$/;"	f
+test	.\U5_5.py	/^def test():    $/;"	f
+test	.\U5_8.py	/^def test():$/;"	f
+test	.\U5_9.py	/^def test():$/;"	f
+test	.\U5_H1.py	/^def test():$/;"	f
+test	.\U5_H2.py	/^def test():$/;"	f
+test	.\U5_H3.py	/^def test():$/;"	f
 test_best_hand	.\U1_H1.py	/^def test_best_hand():$/;"	f
+test_best_wild_hand	.\U1_H2.py	/^def test_best_wild_hand():$/;"	f
+test_more_pour	.\U4_H2.py	/^def test_more_pour():$/;"	f
+test_ride	.\U4_H3.py	/^def test_ride():$/;"	f
 this	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+timedcall	.\U2_19.py	/^def timedcall(fn, *args):$/;"	f
+timedcalls	.\U2_19.py	/^def timedcalls(n, fn, *args):$/;"	f
+trace	.\U3_29.py	/^def trace(f):$/;"	f
+trace	.\U5_H2.py	/^def trace(f):$/;"	f
+two_boy	.\U5_28.py	/^def two_boy(s): return s.count('B') == 2$/;"	f
 two_pair	.\U1_19.py	/^def two_pair(ranks):$/;"	f
 two_pair	.\U1_24.py	/^def two_pair(ranks):$/;"	f
+two_pair	.\U1_24b.py	/^def two_pair(ranks):$/;"	f
 two_pair	.\U1_H1.py	/^def two_pair(ranks):$/;"	f
+two_pair	.\U1_H2.py	/^def two_pair(ranks):$/;"	f
+txt	.\U3_11.py	/^txt='abccdeeef'$/;"	v
+update_wrapper	.\U3_29.py	/^from functools import update_wrapper$/;"	i
+update_wrapper	.\U3_H1.py	/^from functools import update_wrapper$/;"	i
+update_wrapper	.\U5_19.py	/^from functools import update_wrapper$/;"	i
+update_wrapper	.\U5_21.py	/^from functools import update_wrapper$/;"	i
+update_wrapper	.\U5_H1.py	/^from functools import update_wrapper$/;"	i
+update_wrapper	.\U5_H2.py	/^from functools import update_wrapper$/;"	i
 useful	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+valid	.\U2_30.py	/^def valid(f):$/;"	f
+valid	.\U2_32.py	/^def valid(f):$/;"	f
+weeks	.\U5_28.py	/^weeks = 'MTWtFSs'$/;"	v
 will	.\U1_25.py	/^import random # this will be a useful library for shuffling$/;"	i
+win_diff	.\U5_21.py	/^def win_diff(state):$/;"	f
+word	.\U2_41.py	/^word='abcde'$/;"	v

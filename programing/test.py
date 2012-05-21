@@ -1,52 +1,29 @@
-import string,cgi,re
-before='abcdefghijklmnopqrstuvwxyz'
-after=before[13:]+before[:13]
-before+=before.upper()
-after+=after.upper()
-table = string.maketrans(after,before)
-data='i hate it++!<$'
-data=data.translate(table)
-#print after
-#print before
-print cgi.escape(data,quote=True)
-#cevag 'v ungr vg'.genafyngr(gnoyr)
-print 'i hate it++!<$'.encode('rot13')
-USER_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
-PASS_RE = re.compile(r"^.{3,20}$")
-MAIL_RE = re.compile(r"^[\S]+@[\S]+\.[\S]+$")
+from debuger import *
+def P_hen(cards):
+    return cards.count('H') / (1.0*len(cards))
+    
+def P_fox(cards):
+    return cards.count('F') / (1.0*len(cards))
+@trace
+@memo
+def Point(state):
+    (score, yard, cards) = state
+    if cards == '':
+        return score + yard
+    elif 'H' not in cards:
+        return score + yard
+    elif 'F' not in cards:
+        return score + yard + len(cards)
+    elif 'H' in cards and 'F' in cards:
+        cards_H = cards.replace('H','',1)
+        cards_F = cards.replace('F','',1)
+        p_g = P_hen(cards) * Point((score+yard,0, cards_H)) + P_fox(cards) * Point((score+yard,0, cards_F))
+        p_w = P_hen(cards) * Point((score, yard+1, cards_H)) + P_fox(cards) * Point((score, 0, cards_F))
+        return max(p_g,p_w)
 
-def valid_username(username):
-    return USER_RE.match(username)
 
-def valid_password(password):
-    return PASS_RE.match(password)
+print Point((4, 5, 'F'*4 + 'H'*10))
+print Point((4, 5, 'F'*4 + 'H'*10))
+print Point((4, 1, 'FFFHHHHHHHHH'))
+Point((4, 0, 'FFHHHH'))
 
-def valid_email(email):
-    return MAIL_RE.match(email)
-
-def post(username,password,verify,email):
-    inval_name,inval_pass,inval_email,pass_nomatch = '','','',''
-    #username = self.request.get("unsername")
-    #password = self.request.get("password")
-    #verify = self.request.get("verify")
-    #email = self.request.get("email")
-    if not valid_username(username):
-        inval_name='That&#39;s not a valid username.'
-    if not valid_password(username):
-        inval_pass='That wasn&#39;t a valid password.'
-    elif password != verify:
-        pass_nomatch='Your passwords didn&#39;t match.'
-    if email != '' and not valid_email(email):
-        inval_email='That&#39;s not a valid email.'
-    write_dic=locals()
-    if (inval_name,inval_pass,inval_email,pass_nomatch) != ('',)*4:
-        #self.response.out.write(html_signup % {"inval_name":inval_name, "inval_pass":inval_pass, "pass_nomatch":pass_nomatch, "inval_email":inval_email})
-        print inval_name,inval_pass,inval_email,pass_nomatch
-        #print locals() 
-    else:
-        print write_dic
-        print 'yes'
-        #self.redirect('/wellcom?name=%s' % (name))
-
-post('uui','pass','pass','solia1984@gmail.com')
-print valid_email('solia1984@gmail.com').__str__
