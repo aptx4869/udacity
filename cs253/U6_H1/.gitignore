@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*~
+*.html.py
+*.so
+*.o
+*.orig
+*.tmp
+*.md5
+*.*.py
+.*.sw?
