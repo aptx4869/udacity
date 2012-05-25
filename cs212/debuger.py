@@ -1,4 +1,6 @@
 from functools import update_wrapper
+import cProfile
+
 
 def decorator(d):
     "Make function d a decorator: d wraps a function fn."
